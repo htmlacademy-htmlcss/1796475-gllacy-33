@@ -77,7 +77,7 @@
           <div class="description">
             <h4 class="description-title">Малинка</h4>
             <p class="text">Сливочное мороженое с малиновым джемом</p>
-            <h4 class="description-title">310 ₽/кг</h4>
+            <p class="description-title">310 ₽/кг</p>
             <button class="basket" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
         </li>
@@ -86,7 +86,7 @@
           <div class="description">
             <h4 class="description-title">Фисташка</h4>
             <p class="text">Фисташковый пломбир с кусочками шоколада</p>
-            <h4 class="description-title">340 ₽/кг</h4>
+            <p class="description-title">340 ₽/кг</p>
             <button class="basket" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
         </li>
@@ -95,7 +95,7 @@
           <div class="description">
             <h4 class="description-title">Черника</h4>
             <p class="text">Крем-брюле с черничным джемом</p>
-            <h4 class="description-title">330 ₽/кг</h4>
+            <p class="description-title">330 ₽/кг</p>
             <button class="basket" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
         </li>
@@ -104,7 +104,7 @@
           <div class="description">
             <h4 class="description-title">Бабл-гам</h4>
             <p class="text">Ванильный пломбир со сладкой посыпкой</p>
-            <h4 class="description-title">320 ₽/кг</h4>
+            <p class="description-title">320 ₽/кг</p>
             <button class="basket" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
         </li>
@@ -175,35 +175,40 @@
     </section>
   </main>
   <footer class="page-footer">
-    <ul class="social-list">
-      <li class="social-item"><a class="vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-      <li class="social-item"><a class="fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-      <li class="social-item"><a class="insta" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-    </ul>
-    <ul class="info-list">
-      <li class="info-item"><a href="#">Для поставщиков</a></li>
-      <li class="info-item"><a href="#">Наши документы</a></li>
-      <li class="info-item"><a href="#">О производстве</a></li>
-      <li class="info-item"><a href="#">Экологические стандарты</a></li>
-    </ul>
-    <div class="htmlacademy-side">
-      <img class="htmlacademy-logo" src="#" alt="Логотип html academy"/>
+    <section class="social-list-side">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social-list">
+        <li class="social-item"><a class="vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li class="social-item"><a class="fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li class="social-item"><a class="insta" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+      </ul>
+    </section>
+    <section class="info-list-section">
+      <h2 class="visually-hidden">Информация</h2>
+      <ul class="info-list">
+        <li class="info-item"><a href="#">Для поставщиков</a></li>
+        <li class="info-item"><a href="#">Наши документы</a></li>
+        <li class="info-item"><a href="#">О производстве</a></li>
+        <li class="info-item"><a href="#">Экологические стандарты</a></li>
+      </ul>
+    </section>
+    <section class="htmlacademy-side">
+      <h2 class="visually-hidden">Разработчики сайта</h2>
+      <a class="htmlacademy-link" href="htmlacademy.ru"><img class="htmlacademy-logo" src="#" alt="Логотип html academy" /></a>
       <p class="signature">Сделано в <a class="htmlacademy-link" href="htmlacademy.ru">.html academy</a> © 2021</p>
-    </div>
+    </section>
   </footer>
-  <!--
   <div class="modal-container modal-container-close">
     <div class="modal">
       <button class="modal-close-button" type="button"><span class="visually-hidden">Закрыть форму обратной связи</span></button>
       <h3 class="sub-subtitle">Мы обязательно ответим вам!</h3>
-      <form class="modal-form" acion="https://echo.htmlacademy.ru/" method="post">
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="modal-input" placeholder="Имя и фамилия" type="text" name="name" id="name" required />
         <input class="modal-input" placeholder="email@example.com" type="email" name="email" id="email" required />
-        <textarea class="modal-input" placeholder="В свободной форме" type="text" name="text" id="text" required />
+        <textarea class="modal-input" placeholder="В свободной форме" name="text" id="textarea"></textarea>
       </form>
       <button class="button modal-button" type="submit">Отправить</button>
     </div>
   </div>
-    -->
 </body>
 </html>
