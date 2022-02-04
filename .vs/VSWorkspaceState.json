@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\fonts",
+    "\\images",
+    "\\images\\jpg",
+    "\\images\\png",
+    "\\images\\svg",
     "\\styles"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\styles\\styles.css",
   "PreviewInSolutionExplorer": false
 }
