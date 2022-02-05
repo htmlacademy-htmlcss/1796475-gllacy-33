@@ -19,6 +19,9 @@
   src: url("fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
+
+/*ОБЩИЕ СТИЛИ*/
+
 body {
   font-family: "inter", sans-serif;
   font-style: normal;
@@ -27,6 +30,8 @@ body {
   color: #565c66;
   background-color: #feafc3;
 }
+
+/*тексты*/
 .title-first {
   font-weight: 900;
   font-size: 36px;
@@ -55,6 +60,7 @@ body {
 .title-fifth {
   font-weight: 700;
   font-size: 18px;
+  line-height: 22px;
   color: #2d3440;
 }
 .paragraph-first {
@@ -65,30 +71,39 @@ body {
 }
 .paragraph-second {
   font-weight: 400;
-  color: #2d3440;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565c66;
 }
 .paragraph-third {
   font-weight: 400;
+  font-size: 16px;
   line-height: 20px;
+  color: #565c66;
 }
 .paragraph-third-bold {
   font-weight: 700;
+  font-size: 16px;
   line-height: 20px;
+  color: #565c66;
 }
 .signature {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  color: #565c66;
 }
 .signature-bold {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  color: #565c66;
 }
 .signature-second {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+  color: #565c66;
 }
 .link {
   text-decoration: none;
@@ -106,9 +121,11 @@ body {
   color: #fcfcfc;
   background-color: #ff2f64;
 }
-.delivery .title-second {
-  text-align: left;
-}
+
+/*ШАПКА*/
+
+/*ОСНОВНАЯ ЧАСТЬ ГЛАВНОЙ СТРАНИЦЫ*/
+
 /*Подарки*/
 .raspberries {
   width: 570px;
@@ -146,6 +163,19 @@ body {
   background-image: url(../images/jpg/background_2.jpg);
   background-repeat: no-repeat;
 }
+.delivery .title-second {
+  text-align: left;
+}
+/*Форма подписи на рассылку*/
+.delivery-form .paragraph-third-bold {
+  color: #2d3440;
+}
+.delivery-form .paragraph-third {
+  color: #b9b9b9;
+}
+.delivery-form .button-second {
+  color: #fcfcfc;
+}
 /*Контакты*/
 .contacts {
   width: 1170px;
@@ -153,8 +183,26 @@ body {
   background-image: url(../images/jpg/background_3.jpg);
   background-repeat: no-repeat;
 }
+
+/*ФУТЕР*/
+
 /*Логотип htmlacademy в футере*/
 .htmlacademy-side .signature-second {
+  color: #2d3440;
+}
+/*Ссылка на htmlacademy*/
+.htmlacademy-side .link {
+  text-decoration: underline;
+}
+/*Модальное окно*/
+.modal-form .paragraph-third {
+  color: #b9b9b9;
+}
+
+/*КАТАЛОГ*/
+
+/*Форма с фильтрами в каталоге*/
+.catalog-filter .signature {
   color: #2d3440;
 }
 /*Кнопка в фильтре каталога*/
