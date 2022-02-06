@@ -1,2 +1,261 @@
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
 
+/*ОБЩИЕ СТИЛИ*/
 
+body {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565c66;
+  background-color: #feafc3;
+}
+
+/*тексты*/
+.title-first {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+  color: #2d3440;
+}
+.title-second {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2d3440;
+  text-align: center;
+}
+.title-third {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2d3440;
+}
+.title-fourth {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2d3440;
+}
+.title-fifth {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2d3440;
+}
+.paragraph-first {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2d3440;
+}
+.paragraph-second {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565c66;
+}
+.paragraph-third {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565c66;
+}
+.paragraph-third::-webkit-input-placeholder {
+  color: #b9b9b9;
+}
+
+.paragraph-third::-moz-placeholder {
+  color: #b9b9b9;
+}
+
+.paragraph-third:-ms-input-placeholder {
+  color: #b9b9b9;
+}
+
+.paragraph-third:-moz-placeholder {
+  color: #b9b9b9;
+}
+
+.paragraph-third-bold {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565c66;
+}
+.signature {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565c66;
+}
+.signature-bold {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565c66;
+}
+.signature-second {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #565c66;
+}
+.link {
+  text-decoration: none;
+  color: #2d3440;
+}
+.button {
+  text-align: center;
+  text-decoration: none;
+  color: #2d3440;
+  background-color: #fcfcfc;
+}
+.button-second {
+  text-align: center;
+  text-decoration: none;
+  color: #fcfcfc;
+  background-color: #ff2f64;
+}
+
+/*ШАПКА*/
+
+/*ОСНОВНАЯ ЧАСТЬ ГЛАВНОЙ СТРАНИЦЫ*/
+
+/*Подарки*/
+.gifts .paragraph-second {
+  color: #2d3440;
+}
+.raspberries {
+  width: 570px;
+  height: 268px;
+  background-image: url(../images/png/raspberries.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.marshmallow {
+  width: 570px;
+  height: 268px;
+  background-image: url(../images/png/marshmallow.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/*карточки товаров*/
+.description .title-fourth {
+  text-align: center;
+}
+.description .paragraph-second {
+  text-align: center;
+}
+/*Блог*/
+.blog {
+  width: 570px;
+  height: 220px;
+  background-image: url(../images/jpg/background_1.jpg);
+  background-repeat: no-repeat;
+}
+
+/*Форма подписи на рассылку*/
+.newsletter-form .paragraph-third {
+  color: #2d3440;
+}
+
+/*Доставка*/
+.delivery {
+  width: 1170px;
+  height: 534px;
+  background-image: url(../images/jpg/background_2.jpg);
+  background-repeat: no-repeat;
+}
+.delivery .title-second {
+  text-align: left;
+}
+.delivery-form .paragraph-third-bold {
+  color: #2d3440;
+}
+
+.delivery-form .paragraph-third {
+  color: #2d3440;
+}
+
+.delivery-form .button-second {
+  color: #fcfcfc;
+}
+/*Контакты*/
+.contacts {
+  width: 1170px;
+  height: 492px;
+  background-image: url(../images/jpg/background_3.jpg);
+  background-repeat: no-repeat;
+}
+
+/*ФУТЕР*/
+
+/*Логотип htmlacademy в футере*/
+.htmlacademy-side .signature-second {
+  color: #2d3440;
+}
+/*Ссылка на htmlacademy*/
+.htmlacademy-side .link {
+  text-decoration: underline;
+}
+/*Модальное окно*/
+.modal-form .paragraph-third {
+  color: #2d3440;
+}
+
+/*КАТАЛОГ*/
+
+/*Форма с фильтрами в каталоге*/
+.catalog-filter .signature {
+  color: #2d3440;
+}
+/*Кнопка в фильтре каталога*/
+.catalog-filter .button {
+  background-color: #ffcbd8;
+}
