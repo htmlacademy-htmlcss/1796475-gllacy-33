@@ -33,12 +33,16 @@ body {
 
 /*тексты*/
 .title-first {
+  font-family: "inter", sans-serif;
+  font-style: normal;
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
   color: #2d3440;
 }
 .title-second {
+  font-family: "inter", sans-serif;
+  font-style: normal;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -46,60 +50,96 @@ body {
   text-align: center;
 }
 .title-third {
+  font-family: "inter", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #2d3440;
 }
 .title-fourth {
+  font-family: "inter", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #2d3440;
 }
 .title-fifth {
+  font-family: "inter", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   color: #2d3440;
 }
 .paragraph-first {
+  font-family: "inter", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: #2d3440;
 }
 .paragraph-second {
+  font-family: "inter", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #565c66;
 }
 .paragraph-third {
+  font-family: "inter", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #565c66;
 }
+.paragraph-third::-webkit-input-placeholder {
+  color: #b9b9b9;
+}
+
+.paragraph-third::-moz-placeholder {
+  color: #b9b9b9;
+}
+
+.paragraph-third:-ms-input-placeholder {
+  color: #b9b9b9;
+}
+
+.paragraph-third:-moz-placeholder {
+  color: #b9b9b9;
+}
+
 .paragraph-third-bold {
+  font-family: "inter", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #565c66;
 }
 .signature {
+  font-family: "inter", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #565c66;
 }
 .signature-bold {
+  font-family: "inter", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   color: #565c66;
 }
 .signature-second {
+  font-family: "inter", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -127,6 +167,9 @@ body {
 /*ОСНОВНАЯ ЧАСТЬ ГЛАВНОЙ СТРАНИЦЫ*/
 
 /*Подарки*/
+.gifts .paragraph-second {
+  color: #2d3440;
+}
 .raspberries {
   width: 570px;
   height: 268px;
@@ -156,6 +199,12 @@ body {
   background-image: url(../images/jpg/background_1.jpg);
   background-repeat: no-repeat;
 }
+
+/*Форма подписи на рассылку*/
+.newsletter-form .paragraph-third {
+  color: #2d3440;
+}
+
 /*Доставка*/
 .delivery {
   width: 1170px;
@@ -166,13 +215,14 @@ body {
 .delivery .title-second {
   text-align: left;
 }
-/*Форма подписи на рассылку*/
 .delivery-form .paragraph-third-bold {
   color: #2d3440;
 }
+
 .delivery-form .paragraph-third {
-  color: #b9b9b9;
+  color: #2d3440;
 }
+
 .delivery-form .button-second {
   color: #fcfcfc;
 }
@@ -196,7 +246,7 @@ body {
 }
 /*Модальное окно*/
 .modal-form .paragraph-third {
-  color: #b9b9b9;
+  color: #2d3440;
 }
 
 /*КАТАЛОГ*/
