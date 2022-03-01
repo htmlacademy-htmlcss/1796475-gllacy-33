@@ -3,8 +3,9 @@
     "",
     "\\fonts",
     "\\images",
+    "\\images\\svg",
     "\\styles"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\catalog.html",
   "PreviewInSolutionExplorer": false
 }
