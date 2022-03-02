@@ -1009,6 +1009,7 @@ body {
 }
 .catalog-filter .signature {
   color: #2d3440;
+  padding: 0 0 0 16px; 
 }
 .catalog-filter {
   margin: 0 0 48px 0;
@@ -1076,6 +1077,7 @@ body {
 }
 .filter-input[type='number'] {
   -moz-appearance: textfield;
+  padding: 0;
 }
 .filter-input::-webkit-outer-spin-button,
 .filter-input::-webkit-inner-spin-button {
@@ -1086,6 +1088,9 @@ body {
   border: none;
   padding: 0;
   background-color: #feafc3;
+}
+.catalog-filter .rubles {
+  padding: 0; 
 }
 .filter-group:nth-child(3) {
   width: 367px;
@@ -1133,10 +1138,22 @@ body {
 .catalog-filter .button {
   background-color: #ffcbd8;
   box-sizing: border-box;
-  margin: 0;
-  border: 2px solid #fcfcfc;
+  margin: 0 0 0 auto;
+  box-shadow: 0 0 0 2px #fcfcfc;
+  border: none;
   padding: 8px 53px 8px 53px;
   align-self: flex-end;
+  outline: none;
+}
+.catalog-filter .button:hover {
+  background-color: #fcfcfc;
+  box-shadow: 0 0 0 2px #ffcbd8;
+}
+.catalog-filter .button:focus {
+  box-shadow: 0 0 0 2px #2d3440;
+}
+.catalog-filter .button:active {
+  opacity: 0.4;
 }
 /*Карточки товаров*/
 .catalog-list {
@@ -1164,6 +1181,7 @@ body {
   margin: 0 auto 0 494px;
 }
 .pagination {
+  align-items: center;
   margin: auto 0;
   display: flex;
   list-style-type: none;
@@ -1172,7 +1190,7 @@ body {
 .pagination-item {
   padding: 2px 8px 2px 8px;
   width: min-content;
-  height: min-content;
+  max-height: 18px;
   border-radius: 50px;
 }
 .pagination-item-arrow-left {
@@ -1182,6 +1200,16 @@ body {
 }
 .pagination-item-current {
   background-color: #fcfcfc;
+  border: 1px solid  #fcfcfc;
+  outline: none;
+}
+.pagination-item-current:hover {
+  background-color: #ffcbd8;
+  border: 1px solid  #fcfcfc;
+}
+.pagination-item-current:focus {
+  background-color: #ffcbd8;
+  border: 1px solid #2d3440;
 }
 .pagination-item-arrow-right {
   width: 16px;
