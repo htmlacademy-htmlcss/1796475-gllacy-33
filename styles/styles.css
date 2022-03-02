@@ -1,4 +1,4 @@
-@font-face {
+https://vk.com/pisokc@font-face {
   font-family: "inter";
   font-style: normal;
   font-weight: 400;
@@ -1187,32 +1187,41 @@ body {
   list-style-type: none;
   padding: 0;
 }
-.pagination-item {
-  padding: 2px 8px 2px 8px;
-  width: min-content;
-  max-height: 18px;
+.pagination-item .link {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: central;
+  padding: 1px 0 0 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(252, 252, 252, 0);
   border-radius: 50px;
+  outline: none;
 }
-.pagination-item-arrow-left {
+.pagination-item-arrow-left .link {
   width: 16px;
   height: 16px;
   margin: 0 16px 0 0;
 }
-.pagination-item-current {
+.pagination-item-current .link {
   background-color: #fcfcfc;
   border: 1px solid  #fcfcfc;
   outline: none;
 }
-.pagination-item-current:hover {
+.pagination-item-current .link:hover {
   background-color: #ffcbd8;
   border: 1px solid  #fcfcfc;
 }
-.pagination-item-current:focus {
+.pagination-item-current .link:focus {
   background-color: #ffcbd8;
   border: 1px solid #2d3440;
 }
-.pagination-item-arrow-right {
+.pagination-item-arrow-right .link{
   width: 16px;
   height: 16px;
   margin: 0 0 0 16px;
+}
+.end-of-list {
+  opacity: 0.2;
 }
