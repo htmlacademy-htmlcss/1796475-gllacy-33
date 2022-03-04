@@ -10,15 +10,15 @@
     <a class="logo-link" href="index.html"><img src="images/svg/logo.svg" width="137" height="56" alt="Логотип магазина Глейси" /></a>
     <nav class="navigation">
       <ul class="nav-list-left">
-        <li class="nav-item"><a class="paragraph-third link" href="catalog.html">Каталог</a></li>
+        <li class="nav-item"><a class="paragraph-third link current-link" href="catalog.html">Каталог</a></li>
         <li class="nav-item"><a class="paragraph-third link" href="#">Доставка и оплата</a></li>
         <li class="nav-item"><a class="paragraph-third link" href="#">О компании</a></li>
       </ul>
-      <a class="paragraph-third-bold link" href="tel:+78005558628">+7 800 555-86-28</a>
+      <a class="paragraph-third-bold link header-tel" href="tel:+78005558628">+7 800 555-86-28</a>
       <ul class="nav-list-right">
-        <li class="nav-item"><a class="signature link" href="#"><span class="visually-hidden">Поиск по сайту</span></a></li>
-        <li class="nav-item"><a class="signature link" href="#">Вход</a></li>
-        <li class="nav-item"><a class="signature link" href="#"><span class="visually-hidden">Корзина</span>Пусто</a></li>
+        <li class="nav-item"><a class="signature link search" href="#"><span class="visually-hidden">Поиск по сайту</span></a></li>
+        <li class="nav-item"><a class="signature link enter" href="#">Вход</a></li>
+        <li class="nav-item"><a class="signature link basket not-empty-basket" href="#"><span class="visually-hidden">Корзина</span>2 товара</a></li>
       </ul>
     </nav>
   </header>
@@ -44,9 +44,9 @@
         <fieldset class="filter-group">
           <span class="signature">Цена:</span>
           <input class="signature filter-input filter-input-min" type="number" name="min-price" value="100" id="min">
-          <span class="signature">₽ –</span>
+          <span class="signature rubles">₽ –</span>
           <input class="signature filter-input filter-input-max" type="number" name="max-price" value="500" id="max">
-          <span class="signature">₽</span>
+          <span class="signature rubles">₽</span>
           <div class="range-slider">
             <div class="range-scale">
               <div class="range-bar" style="left: 32px; width: 72px">
@@ -142,7 +142,7 @@
             <h4 class="title-fourth">Малинка</h4>
             <p class="paragraph-second">Сливочное мороженое с малиновым джемом</p>
             <b class="title-fourth price">310 ₽/кг</b>
-            <button class="basket" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
+            <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
         </li>
         <li class="catalog-item">
@@ -151,7 +151,7 @@
             <h4 class="title-fourth">Фисташка</h4>
             <p class="paragraph-second">Фисташковый пломбир с кусочками шоколада</p>
             <b class="title-fourth price">340 ₽/кг</b>
-            <button class="basket" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
+            <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
         </li>
         <li class="catalog-item">
@@ -160,7 +160,7 @@
             <h4 class="title-fourth">Черника</h4>
             <p class="paragraph-second">Крем-брюле с черничным джемом</p>
             <b class="title-fourth price">330 ₽/кг</b>
-            <button class="basket" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
+            <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
         </li>
         <li class="catalog-item">
@@ -169,7 +169,7 @@
             <h4 class="title-fourth">Бабл-гам</h4>
             <p class="paragraph-second">Ванильный пломбир со сладкой посыпкой</p>
             <b class="title-fourth price">320 ₽/кг</b>
-            <button class="basket" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
+            <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
         </li>
         <li class="catalog-item">
@@ -178,7 +178,7 @@
             <h4 class="title-fourth">Ежевика</h4>
             <p class="paragraph-second">Сливочное мороженое с ежевичным джемом</p>
             <b class="title-fourth price">330 ₽/кг</b>
-            <button class="basket" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
+            <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
         </li>
         <li class="catalog-item">
@@ -187,7 +187,7 @@
             <h4 class="title-fourth">Банан</h4>
             <p class="paragraph-second">Сливочный пломбир с банановым вкусом</p>
             <b class="title-fourth price">340 ₽/кг</b>
-            <button class="basket" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
+            <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
         </li>
         <li class="catalog-item">
@@ -196,7 +196,7 @@
             <h4 class="title-fourth">Шоколадка</h4>
             <p class="paragraph-second">Классический шоколадный пломбир</p>
             <b class="title-fourth price">270 ₽/кг</b>
-            <button class="basket" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
+            <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
         </li>
         <li class="catalog-item">
@@ -205,7 +205,7 @@
             <h4 class="title-fourth">Клубничка</h4>
             <p class="paragraph-second">Сливочный пломбир с клубничным вкусом</p>
             <p class="title-fourth price">300 ₽/кг</p>
-            <button class="basket" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
+            <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
         </li>
         <li class="catalog-item">
@@ -214,7 +214,7 @@
             <h4 class="title-fourth">Лимон</h4>
             <p class="paragraph-second">Освежающий лимонный сорбет</p>
             <b class="title-fourth price">310 ₽/кг</b>
-            <button class="basket" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
+            <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
         </li>
         <li class="catalog-item">
@@ -223,7 +223,7 @@
             <h4 class="title-fourth">Ментол</h4>
             <p class="paragraph-second">Сливочный пломбир с ментоловым сиропом</p>
             <b class="title-fourth price">320 ₽/кг</b>
-            <button class="basket" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
+            <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
         </li>
         <li class="catalog-item">
@@ -232,7 +232,7 @@
             <h4 class="title-fourth">Орешек</h4>
             <p class="paragraph-second">Фисташковый пломбир с шоколадным сиропом</p>
             <b class="title-fourth price">360 ₽/кг</b>
-            <button class="basket" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
+            <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
         </li>
         <li class="catalog-item">
@@ -241,20 +241,20 @@
             <h4 class="title-fourth">Крем-брюле</h4>
             <p class="paragraph-second">Классическое крем-брюле </p>
             <b class="title-fourth price">280 ₽/кг</b>
-            <button class="basket" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
+            <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
         </li>
       </ul>
       <div class="pagination-container">
         <button class="paragraph-third-bold button" type="button">Показать ещё</button>
         <ol class="pagination">
-          <li class="pagination-item pagination-item-arrow-left"><a class="paragraph-third link" href="#"><</a></li>
+          <li class="pagination-item pagination-item-arrow-left end-of-list"><a class="paragraph-third link" href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.803 3.805a.665.665 0 1 0-.94-.94L4.195 7.533a.665.665 0 0 0-.003.938l.004.003 4.668 4.668a.665.665 0 0 0 .94-.94L5.605 8.003l4.198-4.198Z"/></svg></a></li>
           <li class="pagination-item pagination-item-current"><a class="paragraph-third link" href="#">1</a></li>
           <li class="pagination-item"><a class="paragraph-third link" href="#">2</a></li>
           <li class="pagination-item"><a class="paragraph-third link" href="#">3</a></li>
           <li class="pagination-item"><a class="paragraph-third link" href="#">4</a></li>
           <li class="pagination-item"><a class="paragraph-third link" href="#">5</a></li>
-          <li class="pagination-item pagination-item-arrow-right"><a class="paragraph-third link" href="#">></a></li>
+          <li class="pagination-item pagination-item-arrow-right"><a class="paragraph-third link" href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.668.003-.003c.26-.26.26-.681 0-.94L7.135 2.864Z"/></svg></a></li>
         </ol>
       </div>
     </section>
