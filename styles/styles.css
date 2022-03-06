@@ -980,8 +980,12 @@ body {
 }
 /*Модальное окно*/
 .modal-container {
+  display: none;
   width: 570px;
   margin: 0 auto;
+}
+.modal-container-on {
+  display: block;
 }
 .modal-form .paragraph-third {
   color: #2d3440;
