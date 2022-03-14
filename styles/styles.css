@@ -125,19 +125,15 @@ body {
 .paragraph-third::-webkit-input-placeholder {
   color: #b9b9b9;
 }
-
 .paragraph-third::-moz-placeholder {
   color: #b9b9b9;
 }
-
 .paragraph-third:-ms-input-placeholder {
   color: #b9b9b9;
 }
-
 .paragraph-third:-moz-placeholder {
   color: #b9b9b9;
 }
-
 .paragraph-third-bold {
   font-family: "inter", sans-serif;
   font-style: normal;
@@ -522,19 +518,72 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
   position: absolute;
   width: 420px;
-  height: 350px;
   background-color: #fcfcfc;
   z-index: 2;
   box-sizing: border-box;
   border-radius: 5px;
   right: 0;
   top: 40px;
-  padding: 24px 16px 24px 16px;
+  padding: 48px 48px 48px 48px;
 }
 .popover-enter-on .popover-enter {
   display: block;
 }
-
+.popover-enter-on .enter {
+  background-color: rgba(252, 252, 252, 1);
+  box-shadow: none;    
+}
+.popover-enter .title-third {
+  margin: 0 0 32px 0;
+}
+.enter-form {
+  display: grid;
+  grid-template-columns: 136px auto;
+  grid-template-areas: "mail mail"
+  "password password"
+  "button link";
+}
+.enter-form input {
+  box-sizing: border-box;
+  width: 324px;
+  height: 48px;
+  margin: 0 0 16px 0;
+  border: 1px solid #b9b9b9;
+  border-radius: 5px;
+  padding: 14px 16px 14px 16px;
+  outline: none;
+}
+.enter-form input::placeholder {
+  font: inter;
+  font-weight: 400;
+  font-size: 16px;
+  color: #b9b9b9;
+  line-height: 20px;
+}
+.mail-input {
+  grid-area: mail;
+}
+.password-input {
+  grid-area: password;
+}
+.enter-form .button-second {
+  grid-area: button;
+  margin: 16px 0 0 0;
+}
+.link-enter {
+  grid-area: link;
+  margin: 16px 0 0 0; 
+  display: grid;
+}
+.link-enter a {
+  margin: 0 auto 4px 0;
+  border-bottom: 1px solid #565c66;
+  position: relative;
+  cursor: pointer;
+}
+.link-enter a:hover {
+  opacity: 0.5;
+}
 .basket {
   width: max-content;
   min-height: 32px;
@@ -555,6 +604,31 @@ input[type="search"]::-webkit-search-results-decoration {
 .basket:active {
   background-color: rgba(252, 252, 252, 1);
   box-shadow: none;   
+}
+/*Поповер корзины*/
+.popover-basket-on {
+  position: relative;
+}
+.popover-basket {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  width: 288px;
+  height: 156px;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  top: 40px;
+  right: 0;
+  z-index: 3;
+  padding: 48px;
+  text-align: center;
+}
+.popover-basket-on .popover-basket {
+  display: block;
+}
+.popover-basket-on .basket {
+  background-color: rgba(252, 252, 252, 1);
+  box-shadow: none;  
 }
 .not-empty-basket {
   background-image: url(../images/svg/cart_full.svg);
@@ -658,7 +732,7 @@ input[type="search"]::-webkit-search-results-decoration {
   border: 2px solid rgba(252, 252, 252, 0.3);
   color: rgba(252, 252, 252, 0.3);  
 }
-.slider-next {;
+.slider-next {
   left: 833px;
 }
 .pagination-social-container {
@@ -1091,7 +1165,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .contacts-container .signature {
   margin: 0 0 32px 0; 
 }
-
 /*ФУТЕР*/
 .page-footer {
   padding: 48px 0 48px 0;
@@ -1163,17 +1236,91 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 /*Модальное окно*/
 .modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: none;
-  width: 570px;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 52, 64, 0.3);
+  z-index: 3;
 }
 .modal-container-on {
-  display: block;
+  display: flex;
 }
-.modal-form .paragraph-third {
+.modal {
+  position: relative;
+  box-sizing: border-box;
+  margin: auto;
+  border-radius: 10px;
+  padding: 32px 32px 32px 64px;
+  background-color: #ffffff;
+  width: 570px;
+  height: 545px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start; 
+}
+.modal-close-button {
+  position: relative;
+  margin: 0 0 12px auto;
+  width: 20px;
+  height: 20px;
+  border: none;
+  padding: 0;
+  background: none;
+}
+.modal-close-button::after {
+  position: absolute;
+  content: "";
+  width: 1.33px;
+  height: 12px;
+  top: 4px;
+  left: 9px;
+  background-color: #000000;
+  border-radius: 15px;
+  transform: rotate(-45deg);
+}
+.modal-close-button::before {
+  position: absolute;
+  content: "";
+  width: 1.33px;
+  height: 12px;
+  top: 4px;
+  left: 9px;
+  background-color: #000000;
+  border-radius: 15px;
+  transform: rotate(45deg);
+}
+.modal-close-button:hover {
+  opacity: 0.5;
+}
+.modal .title-third {
+  flex-basis: 100%;
+  margin: 0 0 32px 0;
+}
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.modal .paragraph-third {
+  box-sizing: border-box;
   color: #2d3440;
+  width: 442px;
+  height: 48px;
+  margin: 0 0 16px 0;
+  border: 1px solid #b9b9b9;
+  border-radius: 5px;
+  padding: 14px 16px 14px 16px;
 }
-
+.modal .input-textarea {
+  padding: 16px;
+  height: 149px;
+}
+.modal .button-second {
+  margin: 16px 32px 0 auto;
+}
 /*КАТАЛОГ*/
 /*Хлебные крошки*/
 .breadcrumbs {

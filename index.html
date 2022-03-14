@@ -40,14 +40,21 @@
             <h2 class="title-third">Личный кабинет</h2>
             <form class="enter-form">
               <input class="mail-input" type="email" name="email" placeholder="email@example.com"/>
-              <input class="password-input" type="password" name="password"/>
-              <button class="button-second">Войти</button>
-              <a class="link-enter">Забыли пароль?</a>
-              <a class="link-enter">Регистрация</a>
+              <input class="password-input" type="password" name="password" placeholder="Пароль"/>
+              <button class="button-second paragraph-third-bold">Войти</button>
+              <div class="link-enter">
+                <a class="link-password">Забыли пароль?</a>
+                <a class="link-registretion">Регистрация</a>               
+              </div>
             </form>
           </div>
         </li>
-        <li class="nav-item"><a class="signature link basket" href="#"><span class="visually-hidden">Корзина</span>Пусто</a></li>
+        <li class="nav-item popover-basket-on">
+          <a class="signature link basket" href="#"><span class="visually-hidden">Корзина</span>Пусто</a>
+          <div class="popover-basket">
+            <h2 class="title-third">Ваша корзина пока пуста</h2>           
+          </div>
+        </li>
       </ul>
     </nav>
   </header>
@@ -262,7 +269,7 @@
       <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="paragraph-third" placeholder="Имя и фамилия" type="text" name="name" id="name" required />
         <input class="paragraph-third" placeholder="email@example.com" type="email" name="email" id="email" required />
-        <textarea class="paragraph-third" placeholder="В свободной форме" name="text" id="textarea"></textarea>
+        <textarea class="paragraph-third input-textarea" placeholder="В свободной форме" name="text" id="textarea"></textarea>
         <button class="paragraph-third-bold button-second" type="submit">Отправить</button>
       </form>
     </div>
