@@ -605,11 +605,11 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: rgba(252, 252, 252, 1);
   box-shadow: none;   
 }
-/*Поповер корзины*/
-.popover-basket-on {
+/*Поповер пустой корзины*/
+.popover-basket-empty-on {
   position: relative;
 }
-.popover-basket {
+.popover-basket-empty {
   display: none;
   position: absolute;
   box-sizing: border-box;
@@ -623,16 +623,72 @@ input[type="search"]::-webkit-search-results-decoration {
   padding: 48px;
   text-align: center;
 }
-.popover-basket-on .popover-basket {
+.popover-basket-empty-on .popover-basket-empty {
   display: block;
+}
+.popover-basket-empty-on .basket {
+  background-color: rgba(252, 252, 252, 1);
+  box-shadow: none;  
+}
+/*Значек не пустой корзины*/
+.not-empty-basket .basket {
+  background-image: url(../images/svg/cart_full.svg);
+}
+/*Поповер не пустой корзины*/
+.popover-basket-on {
+  position: relative;
+}
+.popover-basket {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  width: 441px;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  top: 40px;
+  right: 0;
+  z-index: 3;
+  padding: 48px;
 }
 .popover-basket-on .basket {
   background-color: rgba(252, 252, 252, 1);
   box-shadow: none;  
 }
-.not-empty-basket {
-  background-image: url(../images/svg/cart_full.svg);
+.popover-basket-on .popover-basket {
+  display: block;
 }
+.popover-list {
+  list-style-type: none;
+  padding: 0;  
+}
+.popover-link {
+  display: grid;
+  grid-template-areas: "ball title price cross"
+  "ball description price cross";
+  grid-template-columns: 46px 148px 87px 16px;
+  column-gap: 16px;
+  text-decoration: none;
+  align-items: center;
+}
+.popover-ball {
+  grid-area: ball;
+  display: block;
+}
+.popover-title {
+  grid-area: title;
+}
+.popover-description {
+  grid-area: description;
+}
+.popover-price {
+  grid-area: price;
+}
+.popover-cross {
+  grid-area: cross;
+  width: 16px;
+  height: 16px;
+}
+
 /*ОСНОВНАЯ ЧАСТЬ ГЛАВНОЙ СТРАНИЦЫ*/
 .main-container {
   flex-grow: 1;
