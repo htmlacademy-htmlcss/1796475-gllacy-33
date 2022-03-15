@@ -10,15 +10,76 @@
     <a class="logo-link" href="index.html"><img src="images/svg/logo.svg" width="137" height="56" alt="Логотип магазина Глейси" /></a>
     <nav class="navigation">
       <ul class="nav-list-left">
-        <li class="nav-item"><a class="paragraph-third link current-link" href="catalog.html">Каталог</a></li>
+        <li class="nav-item">
+          <a class="paragraph-third link catalog-link current-link" href="catalog.html">Каталог</a>
+          <ul class="sub-navigation">
+            <li class="sub-navigation-item"><a href="catalog.html" class="signature-bold link">Новинки</a></li>
+            <li><a href="catalog.html" class="signature link">Сливочное</a></li>
+            <li><a href="catalog.html" class="signature link">Щербеты</a></li>
+            <li><a href="catalog.html" class="signature link">Фруктовый лед</a></li>
+            <li><a href="catalog.html" class="signature link">Мелорин</a></li>
+          </ul>
+        </li>
         <li class="nav-item"><a class="paragraph-third link" href="#">Доставка и оплата</a></li>
         <li class="nav-item"><a class="paragraph-third link" href="#">О компании</a></li>
       </ul>
       <a class="paragraph-third-bold link header-tel" href="tel:+78005558628">+7 800 555-86-28</a>
       <ul class="nav-list-right">
-        <li class="nav-item"><a class="signature link search" href="#"><span class="visually-hidden">Поиск по сайту</span></a></li>
-        <li class="nav-item"><a class="signature link enter" href="#">Вход</a></li>
-        <li class="nav-item"><a class="signature link basket not-empty-basket" href="#"><span class="visually-hidden">Корзина</span>2 товара</a></li>
+        <li class="nav-item">
+          <a class="signature link search" href="#"><span class="visually-hidden">Поиск по сайту</span></a>
+          <div class="popover-search">
+            <form>
+              <input class="search-input" type="search" name="search" placeholder="Поиск по сайту" />
+              <button class="search-cross" type="button"></button>
+            </form>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="signature link enter" href="#">Вход</a>
+          <div class="popover-enter">
+            <h2 class="title-third">Личный кабинет</h2>
+            <form class="enter-form">
+              <input class="mail-input" type="email" name="email" placeholder="email@example.com" />
+              <input class="password-input" type="password" name="password" placeholder="Пароль" />
+              <button class="button-second paragraph-third-bold">Войти</button>
+              <div class="link-enter">
+                <a class="link-password">Забыли пароль?</a>
+                <a class="link-registretion">Регистрация</a>
+              </div>
+            </form>
+          </div>
+        </li>
+        <li class="nav-item not-empty-basket popover-basket-on">
+          <a class="signature link basket" href="#"><span class="visually-hidden">Корзина</span>2 товара</a>
+          <div class="popover-basket">
+            <h2 class="title-third">Корзина</h2>
+            <ul class="popover-list">
+              <li class="popover-list-item">
+                <a class="popover-link" href="#">
+                  <img class="popover-ball" src="images/jpg/ball_12.jpg" width="46" height="46" alt="шарик мороженного" />
+                  <h4 class="title-fifth popover-title">Малинка</h4>
+                  <span class="signature popover-description">1 кг х 310 ₽</span>
+                  <span class="title-fifth popover-price">310 ₽</span>
+                </a>
+                <button class="popover-cross" type="button"><span class="visually-hidden">кнопка удалить из корзины</span></button>
+              </li>
+              <li class="popover-list-item">
+                <a class="popover-link" href="#">
+                  <img class="popover-ball" src="images/jpg/ball_9.jpg" width="46" height="46" alt="шарик мороженного" />
+                  <h4 class="title-fifth popover-title">Бабл-гам</h4>
+                  <span class="signature popover-description">1,5 кг х 320 ₽</span>
+                  <span class="title-fifth popover-price">480 ₽</span>
+                </a>
+                <button class="popover-cross" type="button"><span class="visually-hidden">кнопка удалить из корзины</span></button>
+              </li>
+            </ul>
+            <button class="button-second paragraph-third-bold" type="button">Оформить заказ</button>
+            <span class="title-fifth total-price">Итог: 790 ₽</span>
+          </div>
+          <div class="popover-basket-empty">
+            <p class="title-third">Ваша корзина пока пуста</p>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>
@@ -99,35 +160,35 @@
             <li class="filter-item">
               <label class="control">
                 <input class="visually-hidden control-input" type="checkbox" name="chocolate" checked>
-                <span class="control-mark"></span>
+                <span class="control-mark checkbox-mark"></span>
                 <span class="signature">шоколадные</span>
               </label>
             </li>
             <li class="filter-item">
               <label class="control">
                 <input class="visually-hidden control-input" type="checkbox" name="sprinkles" checked>
-                <span class="control-mark"></span>
+                <span class="control-mark checkbox-mark"></span>
                 <span class="signature">сахарные посыпки</span>
               </label>
             </li>
             <li class="filter-item">
               <label class="control">
                 <input class="visually-hidden control-input" type="checkbox" name="fruit">
-                <span class="control-mark"></span>
+                <span class="control-mark checkbox-mark"></span>
                 <span class="signature">фрукты</span>
               </label>
             </li>
             <li class="filter-item">
               <label class="control">
                 <input class="visually-hidden control-input" type="checkbox" name="syrups">
-                <span class="control-mark"></span>
+                <span class="control-mark checkbox-mark"></span>
                 <span class="signature">сиропы</span>
               </label>
             </li>
             <li class="filter-item">
               <label class="control">
                 <input class="visually-hidden control-input" type="checkbox" name="jams">
-                <span class="control-mark"></span>
+                <span class="control-mark checkbox-mark"></span>
                 <span class="signature">джемы</span>
               </label>
             </li>
