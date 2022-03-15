@@ -650,25 +650,41 @@ input[type="search"]::-webkit-search-results-decoration {
   z-index: 3;
   padding: 48px;
 }
+.popover-basket .title-third {
+  margin: 0 0 32px 0;
+}
 .popover-basket-on .basket {
   background-color: rgba(252, 252, 252, 1);
-  box-shadow: none;  
+  box-shadow: none;
 }
 .popover-basket-on .popover-basket {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 .popover-list {
   list-style-type: none;
-  padding: 0;  
+  padding: 0 0 8px 0;
+  margin: 0 0 32px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+.popover-list-item {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 16px;
+  align-items: center;
+  margin: 0 0 24px 0;
 }
 .popover-link {
   display: grid;
-  grid-template-areas: "ball title price cross"
-  "ball description price cross";
-  grid-template-columns: 46px 148px 87px 16px;
+  grid-template-areas: "ball title price"
+  "ball description price";
+  grid-template-columns: 46px 148px 87px;
   column-gap: 16px;
   text-decoration: none;
   align-items: center;
+}
+.popover-link:hover {
+  opacity: 0.5;
 }
 .popover-ball {
   grid-area: ball;
@@ -679,16 +695,50 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .popover-description {
   grid-area: description;
+  color: #b9b9b9;
 }
 .popover-price {
   grid-area: price;
 }
 .popover-cross {
-  grid-area: cross;
   width: 16px;
   height: 16px;
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+.popover-cross::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 10px;
+  top: 3px;
+  left: 7px;
+  background-color: #2d3440;
+  border-radius: 15px;
+  transform: rotate(45deg);
 }
 
+.popover-cross::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 10px;
+  top: 3px;
+  left: 7px;
+  background-color: #2d3440;
+  border-radius: 15px;
+  transform: rotate(-45deg);
+}
+.popover-cross:hover {
+  opacity: 0.5;
+}
+.total-price {
+  margin: 0 0 0 auto;
+  align-self: center;
+}
 /*ОСНОВНАЯ ЧАСТЬ ГЛАВНОЙ СТРАНИЦЫ*/
 .main-container {
   flex-grow: 1;
