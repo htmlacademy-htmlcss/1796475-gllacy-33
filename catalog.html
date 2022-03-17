@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/png/favicon.png">
   <link rel="stylesheet" href="styles/styles.css">
   <meta charset="utf-8">
   <title>Каталог</title>
@@ -25,23 +26,25 @@
       </ul>
       <a class="paragraph-third-bold link header-tel" href="tel:+78005558628">+7 800 555-86-28</a>
       <ul class="nav-list-right">
+        <!-- Поповер поиска включается по классу "popover-search-on"  -->        
         <li class="nav-item">
           <a class="signature link search" href="#"><span class="visually-hidden">Поиск по сайту</span></a>
           <div class="popover-search">
-            <form>
+            <form  action="https://echo.htmlacademy.ru/" method="post">
               <input class="search-input" type="search" name="search" placeholder="Поиск по сайту" />
               <button class="search-cross" type="button"></button>
             </form>
           </div>
         </li>
+        <!-- Поповер входа включается по классу "popover-enter-on"  -->         
         <li class="nav-item">
           <a class="signature link enter" href="#">Вход</a>
           <div class="popover-enter">
             <h2 class="title-third">Личный кабинет</h2>
-            <form class="enter-form">
+            <form class="enter-form"  action="https://echo.htmlacademy.ru/" method="post">
               <input class="mail-input" type="email" name="email" placeholder="email@example.com" />
               <input class="password-input" type="password" name="password" placeholder="Пароль" />
-              <button class="button-second paragraph-third-bold">Войти</button>
+              <button class="button-second paragraph-third-bold" type="button">Войти</button>
               <div class="link-enter">
                 <a class="link-password">Забыли пароль?</a>
                 <a class="link-registretion">Регистрация</a>
@@ -49,7 +52,8 @@
             </form>
           </div>
         </li>
-        <li class="nav-item not-empty-basket popover-basket-on">
+        <!-- Поповер карзины включается по классу "popover-basket-on"  -->  
+        <li class="nav-item">
           <a class="signature link basket" href="#"><span class="visually-hidden">Корзина</span>2 товара</a>
           <div class="popover-basket">
             <h2 class="title-third">Корзина</h2>
@@ -75,9 +79,6 @@
             </ul>
             <button class="button-second paragraph-third-bold" type="button">Оформить заказ</button>
             <span class="title-fifth total-price">Итог: 790 ₽</span>
-          </div>
-          <div class="popover-basket-empty">
-            <p class="title-third">Ваша корзина пока пуста</p>
           </div>
         </li>
       </ul>
@@ -314,7 +315,7 @@
           <li class="pagination-item"><a class="paragraph-third link" href="#">2</a></li>
           <li class="pagination-item"><a class="paragraph-third link" href="#">3</a></li>
           <li class="pagination-item"><a class="paragraph-third link" href="#">4</a></li>
-          <li class="pagination-item"><a class="paragraph-third link" href="#">5</a></li>
+          <li class="pagination-item"><a class="paragraph-third link" href="#">5</a></li>                                                                     
           <li class="pagination-item pagination-item-arrow-right"><a class="paragraph-third link" href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.668.003-.003c.26-.26.26-.681 0-.94L7.135 2.864Z"/></svg></a></li>
         </ol>
       </div>
