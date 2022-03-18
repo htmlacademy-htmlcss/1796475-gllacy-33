@@ -755,13 +755,14 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 /*Слайдер*/
 .main-products {
-  margin: 0 0 68px 0;
+  margin: 0 0 63px 0;
   position: relative;
 }
 .slider-container {
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin: 0 0 5px 0;
 }
 .slider {
   display: flex;
@@ -931,12 +932,13 @@ input[type="search"]::-webkit-search-results-decoration {
   border-radius: 15px;
   background-color: #ff7799;
   background-repeat: no-repeat;
-  background-position: 370px bottom;
 }
 .raspberries {
+  background-position: 370px bottom;
   background-image: url(../images/png/raspberries.png);
 }
 .marshmallow {
+  background-position: 335px bottom;
   background-image: url(../images/png/marshmallow.png);
 }
 .gifts-container .title-third {
@@ -1088,7 +1090,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 /*Обёртка для секций блога и формы подписи*/
 .blog-newsletter-container {
-  margin: 0 0 80px 0;
+  margin: 0 0 75px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -1107,13 +1109,14 @@ input[type="search"]::-webkit-search-results-decoration {
   background-repeat: no-repeat;
 }
 .blog .paragraph-third {
-  margin: 0 0 12px 0;
+  margin: 0 0 15px 0;
 }
 .blog .link {
   display: block;
   width: 303px;
 }
 /*Форма подписи на рассылку*/
+
 .newsletter {
   box-sizing: border-box;
   background-image: url(../images/jpg/stripes.jpg);
@@ -1167,7 +1170,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .delivery-form-container {
   margin: 64px 64px 64px auto;
   padding: 40px;
-  border-radius: 15px;
+  border-radius: 7px;
   width: 420px;
   background-color: #fcfcfc;
 }
@@ -1246,7 +1249,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-position: right;
 }
 .delivery-form .button-second {
-  margin: 0 auto;
+  margin: 10px auto 0 auto;
   grid-area: button;
   color: #fcfcfc;
 }
@@ -1284,9 +1287,13 @@ input[type="search"]::-webkit-search-results-decoration {
 .contacts-container .signature {
   margin: 0 0 32px 0; 
 }
+.contacts-container a {
+  text-decoration: none;
+  margin: 0 0 26px 0;
+}
 /*ФУТЕР*/
 .page-footer {
-  padding: 48px 0 48px 0;
+  padding: 45px 0 48px 0;
   width: 1170px;
   margin: 0 auto;
   display: flex;
@@ -1307,7 +1314,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: 0 0 12px 0;
 }
 .info-list-section {
-  margin: 0 auto 0 0;
+  margin: 0 200px 0 0;
   width: 356px;
 }
 .info-list {
@@ -1316,7 +1323,7 @@ input[type="search"]::-webkit-search-results-decoration {
   list-style-type: none;
   display: grid;
   grid-template-columns: auto auto;
-  grid-row-gap: 8px;
+  grid-row-gap: 5px;
 }
 .info-list .info-item {
   padding: 0 0 0 24px;
@@ -1331,7 +1338,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .htmlacademy-link {
   display: block;
-  margin: 0 0 14px 0;
+  margin: 0 0 10px 0;
 }
 /*Логотип htmlacademy в футере*/
 .htmlacademy-side .signature-second {
@@ -1441,6 +1448,11 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: 16px 32px 0 auto;
 }
 /*КАТАЛОГ*/
+
+.page-header-catalog {
+  margin: 0 auto 28px auto; 
+}
+
 /*Хлебные крошки*/
 .breadcrumbs {
   margin: 0 0 16px 0;
@@ -1481,7 +1493,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 /*Форма с фильтрами в каталоге*/
 .catalog {
-  margin: 0 0 48px 0;
+  margin: 0 0 40px 0;
 }
 .catalog-filter .signature {
   color: #2d3440;
@@ -1517,6 +1529,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .select-control:focus {
   box-shadow: 0 0 0 2px #2d3440;
+}
+.filter-group:nth-child(1) .select-control {
+  letter-spacing: 0.06em;
 }
 .filter-group:nth-child(2) {
   width: 196px;
@@ -1740,7 +1755,7 @@ input[type="search"]::-webkit-search-results-decoration {
 /*Карточки товаров*/
 .catalog-list {
   padding: 0;
-  margin: 0 0 16px 0;
+  margin: 0 0 14px 0;
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 30px;
@@ -1777,6 +1792,7 @@ input[type="search"]::-webkit-search-results-decoration {
   text-align: center;
   vertical-align: central;
   padding: 1px 0 0 0;
+  margin: 2px 0 2px 0;
   width: 24px;
   min-height: 24px;
   border: 1px solid rgba(252, 252, 252, 0);
@@ -1801,7 +1817,7 @@ input[type="search"]::-webkit-search-results-decoration {
   border: 1px solid #2d3440;
 }
 .pagination-item-arrow-right .link {
-  margin: 0 0 0 16px;
+  margin: 0 0 0 13px;
   padding: 3px 0 0 0;
 }
 .end-of-list .link {
