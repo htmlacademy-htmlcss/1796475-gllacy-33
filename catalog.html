@@ -41,9 +41,9 @@
           <a class="signature link enter" href="#">Вход</a>
           <div class="popover-enter">
             <h2 class="title-third">Личный кабинет</h2>
-            <form class="enter-form"  action="https://echo.htmlacademy.ru/" method="post">
-              <input class="mail-input" type="email" name="email" placeholder="email@example.com" />
-              <input class="password-input" type="password" name="password" placeholder="Пароль" />
+            <form class="enter-form form"  action="https://echo.htmlacademy.ru/" method="post">
+              <input class="mail-input input" type="email" name="email" placeholder="email@example.com" />
+              <input class="password-input input" type="password" name="password" placeholder="Пароль" />
               <button class="button-second paragraph-third-bold" type="button">Войти</button>
               <div class="link-enter">
                 <a class="link-password">Забыли пароль?</a>
@@ -54,7 +54,7 @@
         </li>
         <!-- Поповер карзины включается по классу "popover-basket-on"  -->  
         <li class="nav-item">
-          <a class="signature link basket" href="#"><span class="visually-hidden">Корзина</span>2 товара</a>
+          <a class="signature link basket basket-not-empty" href="#"><span class="visually-hidden">Корзина</span>2 товара</a>
           <div class="popover-basket">
             <h2 class="title-third">Корзина</h2>
             <ul class="popover-list">
@@ -78,7 +78,7 @@
               </li>
             </ul>
             <button class="button-second paragraph-third-bold" type="button">Оформить заказ</button>
-            <span class="title-fifth total-price">Итог: 790 ₽</span>
+            <span class="title-fifth total-price">Итого: 790 ₽</span>
           </div>
         </li>
       </ul>
@@ -98,7 +98,7 @@
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="filter-group">
           <legend class="signature">Сортировка:</legend>
-          <select class="select-control" id="sorting" name="sorting">
+          <select class="select-control signature" id="sorting" name="sorting">
             <option class="signature" value="popular">по популярности</option>
             <option class="signature" value="cheap">по цене</option>
           </select>

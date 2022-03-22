@@ -41,9 +41,9 @@
           <a class="signature link enter" href="#">Вход</a>
           <div class="popover-enter">
             <h2 class="title-third">Личный кабинет</h2>
-            <form class="enter-form"  action="https://echo.htmlacademy.ru/" method="post">
-              <input class="mail-input" type="email" name="email" placeholder="email@example.com"/>
-              <input class="password-input" type="password" name="password" placeholder="Пароль"/>
+            <form class="enter-form form"  action="https://echo.htmlacademy.ru/" method="post">
+              <input class="mail-input input" type="email" name="email" placeholder="email@example.com"/>
+              <input class="password-input input" type="password" name="password" placeholder="Пароль"/>
               <button class="button-second paragraph-third-bold" type="button">Войти</button>
               <div class="link-enter">
                 <a class="signature link-password">Забыли пароль?</a>
@@ -197,9 +197,9 @@
         <div class="newsletter-container">
           <h2 class="visually-hidden">Форма подписки на рассылку</h2>
           <p class="paragraph-second">Подпишитесь на нашу сладкую рассылку и будьте всегда <br>в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="newsletter-form form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="newsletter-mail">
-              <input class="paragraph-third" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required />
+              <input class="paragraph-third input" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required />
             </label>
             <button class="paragraph-third-bold button-second" type="submit">Отправить</button>
           </form>
@@ -213,18 +213,20 @@
       </div>
       <div class="delivery-form-container">
         <p class="paragraph-second">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-        <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="delivery-form form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="paragraph-third-bold date">
             <span class="input-info">Дата</span>
-            <input class="paragraph-third" placeholder="01.04.2020" type="text" name="date" id="date" required />
+            <div class="tooltip signature-second">Введите дату</div>
+            <input class="paragraph-third input error-input" placeholder="01.04.2020" type="text" name="date" id="date" required />
           </label>
           <label class="paragraph-third-bold telephone">
             Телефон
-            <input class="paragraph-third" placeholder="+7 800 999-00-00" type="tel" name="tel" id="tel" required />
+            <input class="paragraph-third input" placeholder="+7 800 999-00-00" type="tel" name="tel" id="tel" required />
           </label>
           <label class="paragraph-third-bold adress">
             <span class="input-info">Адрес</span>
-            <input class="paragraph-third" placeholder="ул. Большая Конюшенная, 19/8" type="text" name="text" id="text" />
+            <div class="tooltip signature-second">Введите название </br>улицы, дома и квартиры</div>            
+            <input class="paragraph-third input" placeholder="ул. Большая Конюшенная, 19/8" type="text" name="text" id="text" />
           </label>
           <button class="paragraph-third-bold button-second" type="submit">Отправить</button>
         </form>
@@ -266,14 +268,15 @@
       <p class="signature-second ">Сделано в <a class="link" href="htmlacademy.ru">.html academy</a> © 2021</p>
     </section>
   </footer>
+        <!-- Модальное окно включается по классу "modal-container-on"  -->   
   <div class="modal-container">
     <div class="modal">
       <button class="modal-close-button" type="button"><span class="visually-hidden">Закрыть форму обратной связи</span></button>
       <h3 class="title-third">Мы обязательно ответим вам!</h3>
-      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="paragraph-third" placeholder="Имя и фамилия" type="text" name="name" id="name" required />
-        <input class="paragraph-third" placeholder="email@example.com" type="email" name="email" id="email" required />
-        <textarea class="paragraph-third input-textarea" placeholder="В свободной форме" name="text" id="textarea"></textarea>
+      <form class="modal-form form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="paragraph-third input" placeholder="Имя и фамилия" type="text" name="name" id="name" required />
+        <input class="paragraph-third input" placeholder="email@example.com" type="email" name="email" id="email" required />
+        <textarea class="paragraph-third input-textarea input" placeholder="В свободной форме" name="text" id="textarea"></textarea>
         <button class="paragraph-third-bold button-second" type="submit">Отправить</button>
       </form>
     </div>
