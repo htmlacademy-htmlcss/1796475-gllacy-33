@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/png/favicon.png">
   <link rel="stylesheet" href="styles/styles.css">
   <meta charset="utf-8">
   <title>Каталог</title>
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header page-header-catalog">
     <a class="logo-link" href="index.html"><img src="images/svg/logo.svg" width="137" height="56" alt="Логотип магазина Глейси" /></a>
     <nav class="navigation">
       <ul class="nav-list-left">
@@ -25,23 +26,25 @@
       </ul>
       <a class="paragraph-third-bold link header-tel" href="tel:+78005558628">+7 800 555-86-28</a>
       <ul class="nav-list-right">
+        <!-- Поповер поиска включается по классу "popover-search-on"  -->        
         <li class="nav-item">
           <a class="signature link search" href="#"><span class="visually-hidden">Поиск по сайту</span></a>
           <div class="popover-search">
-            <form>
+            <form  action="https://echo.htmlacademy.ru/" method="post">
               <input class="search-input" type="search" name="search" placeholder="Поиск по сайту" />
               <button class="search-cross" type="button"></button>
             </form>
           </div>
         </li>
+        <!-- Поповер входа включается по классу "popover-enter-on"  -->         
         <li class="nav-item">
           <a class="signature link enter" href="#">Вход</a>
           <div class="popover-enter">
             <h2 class="title-third">Личный кабинет</h2>
-            <form class="enter-form">
-              <input class="mail-input" type="email" name="email" placeholder="email@example.com" />
-              <input class="password-input" type="password" name="password" placeholder="Пароль" />
-              <button class="button-second paragraph-third-bold">Войти</button>
+            <form class="enter-form form"  action="https://echo.htmlacademy.ru/" method="post">
+              <input class="mail-input input" type="email" name="email" placeholder="email@example.com" />
+              <input class="password-input input" type="password" name="password" placeholder="Пароль" />
+              <button class="button-second paragraph-third-bold" type="button">Войти</button>
               <div class="link-enter">
                 <a class="link-password">Забыли пароль?</a>
                 <a class="link-registretion">Регистрация</a>
@@ -49,8 +52,9 @@
             </form>
           </div>
         </li>
-        <li class="nav-item not-empty-basket popover-basket-on">
-          <a class="signature link basket" href="#"><span class="visually-hidden">Корзина</span>2 товара</a>
+        <!-- Поповер карзины включается по классу "popover-basket-on"  -->  
+        <li class="nav-item">
+          <a class="signature link basket basket-not-empty" href="#"><span class="visually-hidden">Корзина</span>2 товара</a>
           <div class="popover-basket">
             <h2 class="title-third">Корзина</h2>
             <ul class="popover-list">
@@ -74,10 +78,7 @@
               </li>
             </ul>
             <button class="button-second paragraph-third-bold" type="button">Оформить заказ</button>
-            <span class="title-fifth total-price">Итог: 790 ₽</span>
-          </div>
-          <div class="popover-basket-empty">
-            <p class="title-third">Ваша корзина пока пуста</p>
+            <span class="title-fifth total-price">Итого: 790 ₽</span>
           </div>
         </li>
       </ul>
@@ -97,9 +98,9 @@
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="filter-group">
           <legend class="signature">Сортировка:</legend>
-          <select class="select-control" id="sorting" name="sorting">
-            <option class="signature" value="popular">По популярности</option>
-            <option class="signature" value="cheap">По цене</option>
+          <select class="select-control signature" id="sorting" name="sorting">
+            <option class="signature" value="popular">по популярности</option>
+            <option class="signature" value="cheap">по цене</option>
           </select>
         </fieldset>
         <fieldset class="filter-group">
@@ -219,7 +220,7 @@
           <a class="img-link" href="#"><img class="ball" src="images/jpg/ball_10.jpg" width="168" height="168" alt="шарик мороженного" /></a>
           <div class="description">
             <h4 class="title-fourth">Черника</h4>
-            <p class="paragraph-second">Крем-брюле с черничным джемом</p>
+            <p class="paragraph-second">Крем-брюле <br> с черничным джемом</p>
             <b class="title-fourth price">330 ₽/кг</b>
             <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
@@ -228,7 +229,7 @@
           <a class="img-link" href="#"><img class="ball" src="images/jpg/ball_9.jpg" width="168" height="168" alt="шарик мороженного" /></a>
           <div class="description">
             <h4 class="title-fourth">Бабл-гам</h4>
-            <p class="paragraph-second">Ванильный пломбир со сладкой посыпкой</p>
+            <p class="paragraph-second">Ванильный пломбир <br>со сладкой посыпкой</p>
             <b class="title-fourth price">320 ₽/кг</b>
             <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
@@ -246,7 +247,7 @@
           <a class="img-link" href="#"><img class="ball" src="images/jpg/ball_7.jpg" width="168" height="168" alt="шарик мороженного" /></a>
           <div class="description">
             <h4 class="title-fourth">Банан</h4>
-            <p class="paragraph-second">Сливочный пломбир с банановым вкусом</p>
+            <p class="paragraph-second">Сливочный пломбир <br>с банановым вкусом</p>
             <b class="title-fourth price">340 ₽/кг</b>
             <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
@@ -282,7 +283,7 @@
           <a class="img-link" href="#"><img class="ball" src="images/jpg/ball_3.jpg" width="168" height="168" alt="шарик мороженного" /></a>
           <div class="description">
             <h4 class="title-fourth">Ментол</h4>
-            <p class="paragraph-second">Сливочный пломбир с ментоловым сиропом</p>
+            <p class="paragraph-second">Сливочный пломбир <br>с ментоловым сиропом</p>
             <b class="title-fourth price">320 ₽/кг</b>
             <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
@@ -300,7 +301,7 @@
           <a class="img-link" href="#"><img class="ball" src="images/jpg/ball_1.jpg" width="168" height="168" alt="шарик мороженного" /></a>
           <div class="description">
             <h4 class="title-fourth">Крем-брюле</h4>
-            <p class="paragraph-second">Классическое крем-брюле </p>
+            <p class="paragraph-second">Классическое <br>крем-брюле </p>
             <b class="title-fourth price">280 ₽/кг</b>
             <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
@@ -314,7 +315,7 @@
           <li class="pagination-item"><a class="paragraph-third link" href="#">2</a></li>
           <li class="pagination-item"><a class="paragraph-third link" href="#">3</a></li>
           <li class="pagination-item"><a class="paragraph-third link" href="#">4</a></li>
-          <li class="pagination-item"><a class="paragraph-third link" href="#">5</a></li>
+          <li class="pagination-item"><a class="paragraph-third link" href="#">5</a></li>                                                                     
           <li class="pagination-item pagination-item-arrow-right"><a class="paragraph-third link" href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.668.003-.003c.26-.26.26-.681 0-.94L7.135 2.864Z"/></svg></a></li>
         </ol>
       </div>

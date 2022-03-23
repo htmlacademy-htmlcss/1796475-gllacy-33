@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/png/favicon.png">
   <link rel="stylesheet" href="styles/styles.css">
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
@@ -25,57 +26,35 @@
       </ul>
       <a class="paragraph-third-bold link header-tel" href="tel:+78005558628">+7 800 555-86-28</a>
       <ul class="nav-list-right">
-        <li class="nav-item popover-search-on">
+        <!-- Поповер поиска включается по классу "popover-search-on"  -->          
+        <li class="nav-item">
           <a class="signature link search" href="#"><span class="visually-hidden">Поиск по сайту</span></a>
           <div class="popover-search">
-            <form>
+            <form  action="https://echo.htmlacademy.ru/" method="post">
               <input class="search-input" type="search" name="search" placeholder="Поиск по сайту" />
               <button class="search-cross" type="button"></button>
             </form>
           </div>
         </li>
-        <li class="nav-item popover-enter-on">
+        <!-- Поповер входа включается по классу "popover-enter-on"  -->            
+        <li class="nav-item">
           <a class="signature link enter" href="#">Вход</a>
           <div class="popover-enter">
             <h2 class="title-third">Личный кабинет</h2>
-            <form class="enter-form">
-              <input class="mail-input" type="email" name="email" placeholder="email@example.com"/>
-              <input class="password-input" type="password" name="password" placeholder="Пароль"/>
-              <button class="button-second paragraph-third-bold">Войти</button>
+            <form class="enter-form form"  action="https://echo.htmlacademy.ru/" method="post">
+              <input class="mail-input input" type="email" name="email" placeholder="email@example.com"/>
+              <input class="password-input input" type="password" name="password" placeholder="Пароль"/>
+              <button class="button-second paragraph-third-bold" type="button">Войти</button>
               <div class="link-enter">
-                <a class="link-password">Забыли пароль?</a>
-                <a class="link-registretion">Регистрация</a>               
+                <a class="signature link-password">Забыли пароль?</a>
+                <a class="signature link-registretion">Регистрация</a>               
               </div>
             </form>
           </div>
         </li>
-        <li class="nav-item popover-basket-empty-on">
-          <a class="signature link basket" href="#"><span class="visually-hidden">Корзина</span>Пусто</a>  
-          <div class="popover-basket">
-            <h2 class="title-third">Корзина</h2>
-            <ul class="popover-list">
-              <li class="popover-list-item">
-                <a class="popover-link" href="#">
-                  <img class="popover-ball" src="images/jpg/ball_12.jpg" width="46" height="46" alt="шарик мороженного" />
-                  <h4 class="title-fifth popover-title">Малинка</h4>
-                  <span class="signature popover-description">1 кг х 310 ₽</span>
-                  <span class="title-fifth popover-price">310 ₽</span>
-                </a>
-                <button class="popover-cross" type="button"><span class="visually-hidden">кнопка удалить из корзины</span></button>
-              </li>
-              <li class="popover-list-item">
-                <a class="popover-link" href="#">
-                  <img class="popover-ball" src="images/jpg/ball_9.jpg" width="46" height="46" alt="шарик мороженного" />
-                  <h4 class="title-fifth popover-title">Бабл-гам</h4>
-                  <span class="signature popover-description">1,5 кг х 320 ₽</span>
-                  <span class="title-fifth popover-price">480 ₽</span>
-                </a>
-                <button class="popover-cross" type="button"><span class="visually-hidden">кнопка удалить из корзины</span></button>
-              </li>
-            </ul>
-            <button class="button-second paragraph-third-bold" type="button">Оформить заказ</button>
-            <span class="title-fifth total-price">Итог: 790 ₽</span>
-          </div>       
+        <!-- Поповер пустой корзины по классу "popover-basket-empty-on"  -->        
+        <li class="nav-item">
+          <a class="signature link basket" href="#"><span class="visually-hidden">Корзина</span>Пусто</a>         
           <div class="popover-basket-empty">
             <p class="title-third">Ваша корзина пока пуста</p>           
           </div>
@@ -89,8 +68,8 @@
       <div class="slider-container">
         <div class="slider slider-active">
           <div class="product-description">
-            <h2 class="title-first">Нежный пломбир <br /> с клубничным джемом</h2>
-            <p class="paragraph-first">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
+            <h2 class="title-first">Нежный пломбир <br> с клубничным джемом</h2>
+            <p class="paragraph-first">Натуральное мороженое из свежих сливок <br>и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
             <a class="paragraph-third-bold button" href="#">Заказать</a>
           </div>
           <div class="slider-img-container">
@@ -173,7 +152,7 @@
           <a class="img-link" href="#"><img class="ball" src="images/jpg/ball_10.jpg" width="168" height="168" alt="шарик мороженного" /></a>
           <div class="description">
             <h4 class="title-fourth">Черника</h4>
-            <p class="paragraph-second">Крем-брюле с черничным джемом</p>
+            <p class="paragraph-second">Крем-брюле <br> с черничным джемом</p>
             <b class="title-fourth price">330 ₽/кг</b>
             <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
@@ -182,7 +161,7 @@
           <a class="img-link" href="#"><img class="ball" src="images/jpg/ball_9.jpg" width="168" height="168" alt="шарик мороженного" /></a>
           <div class="description">
             <h4 class="title-fourth">Бабл-гам</h4>
-            <p class="paragraph-second">Ванильный пломбир со сладкой посыпкой</p>
+            <p class="paragraph-second">Ванильный пломбир <br> со сладкой посыпкой</p>
             <b class="title-fourth price">320 ₽/кг</b>
             <button class="cart" type="button"><span class="visually-hidden">кнопка отправить в корзину</span></button>
           </div>
@@ -197,10 +176,10 @@
             <p class="paragraph-second">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
           </li>
           <li class="advantage cow">
-            <p class="paragraph-second">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
+            <p class="paragraph-second">Закупка ингредиентов производится только <br>у проверенных фермерских хозяйств, с которыми <br> нас связывает долговременное сотрудничество.</p>
           </li>
           <li class="advantage leaf">
-            <p class="paragraph-second">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья. </p>
+            <p class="paragraph-second">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты <br> и добавки произведены из натурального сырья. </p>
           </li>
           <li class="advantage ice-cream-cone">
             <p class="paragraph-second">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
@@ -217,10 +196,10 @@
       <section class="newsletter">
         <div class="newsletter-container">
           <h2 class="visually-hidden">Форма подписки на рассылку</h2>
-          <p class="paragraph-second">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="paragraph-second">Подпишитесь на нашу сладкую рассылку и будьте всегда <br>в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form class="newsletter-form form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="newsletter-mail">
-              <input class="paragraph-third" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required />
+              <input class="paragraph-third input" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required />
             </label>
             <button class="paragraph-third-bold button-second" type="submit">Отправить</button>
           </form>
@@ -234,18 +213,20 @@
       </div>
       <div class="delivery-form-container">
         <p class="paragraph-second">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-        <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="delivery-form form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="paragraph-third-bold date">
             <span class="input-info">Дата</span>
-            <input class="paragraph-third" placeholder="01.04.2020" type="text" name="date" id="date" required />
+            <div class="tooltip signature-second">Введите дату</div>
+            <input class="paragraph-third input error-input" placeholder="01.04.2020" type="text" name="date" id="date" required />
           </label>
           <label class="paragraph-third-bold telephone">
             Телефон
-            <input class="paragraph-third" placeholder="+7 800 999-00-00" type="tel" name="tel" id="tel" required />
+            <input class="paragraph-third input" placeholder="+7 800 999-00-00" type="tel" name="tel" id="tel" required />
           </label>
           <label class="paragraph-third-bold adress">
             <span class="input-info">Адрес</span>
-            <input class="paragraph-third" placeholder="ул. Большая Конюшенная, 19/8" type="text" name="text" id="text" />
+            <div class="tooltip signature-second">Введите название </br>улицы, дома и квартиры</div>            
+            <input class="paragraph-third input" placeholder="ул. Большая Конюшенная, 19/8" type="text" name="text" id="text" />
           </label>
           <button class="paragraph-third-bold button-second" type="submit">Отправить</button>
         </form>
@@ -255,9 +236,9 @@
       <h2 class="visually-hidden">Адрес и контакты</h2>
       <div class="contacts-container">
         <p class="paragraph-second">Адрес главного офиса и офлайн-магазина:</p>
-        <p class="title-fourth">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+        <p class="title-fourth">наб. реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
         <p class="paragraph-second telephone-paragraph">Для заказов по телефону:</p>
-        <a class="title-fourth">+7 (812) 812-12-12</a>
+        <a class="title-fourth" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <p class="signature">(с 10 до 20 ежедневно)</p>
         <button class="paragraph-third-bold button-second" type="button">Форма обратной связи</button>
       </div>
@@ -287,14 +268,15 @@
       <p class="signature-second ">Сделано в <a class="link" href="htmlacademy.ru">.html academy</a> © 2021</p>
     </section>
   </footer>
+        <!-- Модальное окно включается по классу "modal-container-on"  -->   
   <div class="modal-container">
     <div class="modal">
       <button class="modal-close-button" type="button"><span class="visually-hidden">Закрыть форму обратной связи</span></button>
       <h3 class="title-third">Мы обязательно ответим вам!</h3>
-      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="paragraph-third" placeholder="Имя и фамилия" type="text" name="name" id="name" required />
-        <input class="paragraph-third" placeholder="email@example.com" type="email" name="email" id="email" required />
-        <textarea class="paragraph-third input-textarea" placeholder="В свободной форме" name="text" id="textarea"></textarea>
+      <form class="modal-form form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="paragraph-third input" placeholder="Имя и фамилия" type="text" name="name" id="name" required />
+        <input class="paragraph-third input" placeholder="email@example.com" type="email" name="email" id="email" required />
+        <textarea class="paragraph-third input-textarea input" placeholder="В свободной форме" name="text" id="textarea"></textarea>
         <button class="paragraph-third-bold button-second" type="submit">Отправить</button>
       </form>
     </div>
