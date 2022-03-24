@@ -31,7 +31,8 @@
           <a class="signature link search" href="#"><span class="visually-hidden">Поиск по сайту</span></a>
           <div class="popover-search">
             <form  action="https://echo.htmlacademy.ru/" method="post">
-              <input class="search-input" type="search" name="search" placeholder="Поиск по сайту" />
+              <label class="visually-hidden" for="find">Строка поиска</label>              
+              <input class="search-input" id="find" type="search" name="search" placeholder="Поиск по сайту" />                        
               <button class="search-cross" type="button"></button>
             </form>
           </div>
@@ -42,8 +43,10 @@
           <div class="popover-enter">
             <h2 class="title-third">Личный кабинет</h2>
             <form class="enter-form form"  action="https://echo.htmlacademy.ru/" method="post">
-              <input class="mail-input input" type="email" name="email" placeholder="email@example.com" />
-              <input class="password-input input" type="password" name="password" placeholder="Пароль" />
+              <input class="mail-input input" id="email" type="email" name="email" placeholder="email@example.com" />
+              <label class="visually-hidden" for="email">Строка ввода электронной почты</label> 
+              <input class="password-input input" id="password" type="password" name="password" placeholder="Пароль" />
+              <label class="visually-hidden" for="password">Строка ввода пароля</label>               
               <button class="button-second paragraph-third-bold" type="button">Войти</button>
               <div class="link-enter">
                 <a class="link-password">Забыли пароль?</a>
@@ -106,8 +109,10 @@
         <fieldset class="filter-group">
           <span class="signature">Цена:</span>
           <input class="signature filter-input filter-input-min" type="number" name="min-price" value="100" id="min">
+          <label class="visually-hidden" for="min">Значение минимальной цены</label>
           <span class="signature rubles">₽ –</span>
           <input class="signature filter-input filter-input-max" type="number" name="max-price" value="500" id="max">
+          <label class="visually-hidden" for="max">Значение максимальной цены</label>          
           <span class="signature rubles">₽</span>
           <div class="range-slider">
             <div class="range-scale">

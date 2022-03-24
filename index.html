@@ -31,7 +31,8 @@
           <a class="signature link search" href="#"><span class="visually-hidden">Поиск по сайту</span></a>
           <div class="popover-search">
             <form  action="https://echo.htmlacademy.ru/" method="post">
-              <input class="search-input" type="search" name="search" placeholder="Поиск по сайту" />
+              <label class="visually-hidden" for="find">Строка поиска</label>              
+              <input class="search-input" id="find" type="search" name="search" placeholder="Поиск по сайту" />
               <button class="search-cross" type="button"></button>
             </form>
           </div>
@@ -42,8 +43,10 @@
           <div class="popover-enter">
             <h2 class="title-third">Личный кабинет</h2>
             <form class="enter-form form"  action="https://echo.htmlacademy.ru/" method="post">
-              <input class="mail-input input" type="email" name="email" placeholder="email@example.com"/>
-              <input class="password-input input" type="password" name="password" placeholder="Пароль"/>
+              <input class="mail-input input" id="email" type="email" name="email" placeholder="email@example.com"/>
+              <label class="visually-hidden" for="email">Строка ввода электронной почты</label>              
+              <input class="password-input input" id="password" type="password" name="password" placeholder="Пароль"/>
+              <label class="visually-hidden" for="password">Строка ввода пароля</label>              
               <button class="button-second paragraph-third-bold" type="button">Войти</button>
               <div class="link-enter">
                 <a class="signature link-password">Забыли пароль?</a>
@@ -198,7 +201,7 @@
           <h2 class="visually-hidden">Форма подписки на рассылку</h2>
           <p class="paragraph-second">Подпишитесь на нашу сладкую рассылку и будьте всегда <br>в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form class="newsletter-form form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="newsletter-mail">
+            <label class="newsletter-mail"><span class="visually-hidden">Поле ввода электронной почты</span>
               <input class="paragraph-third input" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required />
             </label>
             <button class="paragraph-third-bold button-second" type="submit">Отправить</button>
@@ -216,7 +219,7 @@
         <form class="delivery-form form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="paragraph-third-bold date">
             <span class="input-info">Дата</span>
-            <div class="tooltip signature-second">Введите дату</div>
+            <span class="tooltip signature-second">Введите дату</span>
             <input class="paragraph-third input error-input" placeholder="01.04.2020" type="text" name="date" id="date" required />
           </label>
           <label class="paragraph-third-bold telephone">
@@ -225,7 +228,7 @@
           </label>
           <label class="paragraph-third-bold adress">
             <span class="input-info">Адрес</span>
-            <div class="tooltip signature-second">Введите название </br>улицы, дома и квартиры</div>            
+            <span class="tooltip signature-second">Введите название <br>улицы, дома и квартиры</span>            
             <input class="paragraph-third input" placeholder="ул. Большая Конюшенная, 19/8" type="text" name="text" id="text" />
           </label>
           <button class="paragraph-third-bold button-second" type="submit">Отправить</button>
@@ -275,8 +278,11 @@
       <h3 class="title-third">Мы обязательно ответим вам!</h3>
       <form class="modal-form form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="paragraph-third input" placeholder="Имя и фамилия" type="text" name="name" id="name" required />
-        <input class="paragraph-third input" placeholder="email@example.com" type="email" name="email" id="email" required />
+        <label class="visually-hidden" for="name">Поле ввода имени</label>
+        <input class="paragraph-third input" placeholder="email@example.com" type="email" name="email" id="mail" required />
+        <label class="visually-hidden" for="mail">Поле ввода почты</label>        
         <textarea class="paragraph-third input-textarea input" placeholder="В свободной форме" name="text" id="textarea"></textarea>
+        <label class="visually-hidden" for="textarea">Поле ввода описания</label>          
         <button class="paragraph-third-bold button-second" type="submit">Отправить</button>
       </form>
     </div>
